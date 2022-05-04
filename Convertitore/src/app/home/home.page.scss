@@ -1,0 +1,33 @@
+#container {
+  text-align: center;
+text-decoration-color: aqua;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #843737;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+  text-decoration-color: aquamarine;
+}
+#colore{
+  text-decoration-color: antiquewhite;
+  background-color: darkgrey;
+  
+}

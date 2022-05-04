@@ -1,0 +1,83 @@
+h1 {
+    color: coral;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 250px;
+    top: -2px;
+}
+
+.foto {
+    position: absolute;
+    float: right;
+    left: 500px;
+    top: 63px;
+    z-index: 9999;
+}
+
+#dati-personali {
+    position: absolute;
+    width: 815px;
+    height: 180px;
+    left: 17px;
+    top: 43px;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', Monospace;
+    background-color: rgb(240, 255, 255, 0.8);
+    border-top: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.paragrafo {
+    background-color: rgb(240, 255, 255, 0.8);
+    display: block;
+    width: 100px;
+    height: 390px;
+    padding: 5px;
+    position: absolute;
+    top: 229px;
+    left: 17px;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', Monospace;
+    width: 44.4%;
+    border-top: dashed rgb(0, 0, 0);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    text-align: left;
+}
+
+table {
+    position: absolute;
+    top: 630px;
+    left: 17px;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(190, 190, 190, 0.8);
+    width: 45.05%;
+    border-top: solid black;
+    border-bottom: 3px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+}
+
+.sfondo-background {
+    background-image: url(https://img.freepik.com/free-photo/view-white-crumpled-paper_1194-7544.jpg?t=st=1649426615~exp=1649427215~hmac=41f46cd323b1838750e452063e3ce01f295d8b7db2ef540748dfae0277c8e5e5&w=1380);
+}
+
+button {
+    position: absolute;
+    top: 155px;
+    left: 41px;
+    width: 20%;
+}
+
+.bottom {
+    position: absolute;
+    left: 17px;
+    top: 696px;
+    z-index: -1;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 45.05%;
+}
+</style>
