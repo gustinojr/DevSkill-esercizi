@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit,  } from '@angular/core';
 
 @Component({
   selector: 'app-uva100',
@@ -6,24 +6,24 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./uva100.page.scss'],
 })
 export class Uva100Page implements OnInit {
+i: number;
+j: number; 
+a: number[] = [];
+max: number = 0;
+occ: number = 0;
+k:number;
+constructor() { 
+  }
 
-  constructor() { }
+ngOnInit() { }
 
-  ngOnInit() { }
-  @Input() i: number;
-  @Input() j: number;
-  @Output()
-  evento = new EventEmitter<number>();
-
- a: number[] = [];
- max: number = 0;
- occ: number = 0;
  
  
  
-massimo(i:number, j:number):void{
-while (j >= i) {
-    let n: number = j;
+massimo():void{
+ this.k=this.j;
+while (this.j >= this.i) {
+    let n: number = this.j;
     while (n != 1) {
         if (n % 2 == 0) {
             n = n / 2
@@ -39,13 +39,9 @@ while (j >= i) {
         this.max = this.occ;
     }
     this.a = [];
-    j--
-}
-this.evento.emit(this.max);
-
+    this.j--;
+    }
 }
 
-stampa(){
-  console.log(this.max);
-}
+
 }

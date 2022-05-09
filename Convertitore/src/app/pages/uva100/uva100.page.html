@@ -32,32 +32,28 @@
           <H3 class="ion-text-center">I</H3>
           <ion-item>
             <ion-label position="floating">Inserisci valore iniziale</ion-label>
-            <ion-input type="number" [(ngModel)]='i'> </ion-input>
+            <ion-input type="number" [(ngModel)]="i"> </ion-input>
           </ion-item>
         </ion-col>
         <ion-col>
           <h3 class="ion-text-center">J</h3>
           <ion-item>
             <ion-label position="floating">Inserisci valore finale</ion-label>
-            <ion-input type="number" [(ngModel)]='j'> </ion-input>
+            <ion-input type="number" [(ngModel)]="j"> </ion-input>
           </ion-item>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col></ion-col>
           <ion-col>
-            <h3 class="ion-text-center">Massima Lunghezza</h3>
-            <ion-item>
-              <ion-label position="floating">La lunghezza massima è </ion-label>
-              <ion-input (evento)="stampa($event)" ></ion-input>
-            </ion-item>
+            <h3 class="ion-text-center">La lunghezza massima tra {{i}} e {{k}} è {{max}} </h3>
           </ion-col>
           <ion-col></ion-col>
         </ion-row>
         <ion-row>
-          <ion-button (onclick)="stampa(max)">
-            <ion-icon slot="icon-only" name="add"></ion-icon>
-          </ion-button>
+          <ion-col></ion-col>
+          <ion-button (click)="massimo()">Calcola massimo </ion-button>
+          <ion-col></ion-col>
         </ion-row>
     </ion-grid>
 </ion-content>
