@@ -12,6 +12,7 @@ a: number[] = [];
 max: number = 0;
 occ: number = 0;
 k:number;
+
 constructor() { 
   }
 
@@ -42,6 +43,7 @@ while (this.j >= this.i) {
     this.j--;
     }
 }
+
 
 
 }

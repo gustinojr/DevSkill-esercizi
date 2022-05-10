@@ -1,13 +1,13 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>uva100</ion-title>
+    <ion-title>uva136</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">uva100</ion-title>
+      <ion-title size="large">uva136</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -15,44 +15,36 @@
       <ion-row>
         <ion-col></ion-col>
         <ion-col>
-          <h1 class="ion-text-center">3n + 1</h1>
+          <h1 class="ion-text-center">n'th Ugly Number</h1>
         </ion-col>
         <ion-col></ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
-          <h2 class="ion-text-center">Valore I</h2>
-        </ion-col>
-        <ion-col>
-          <h2 class="ion-text-center">Valore J</h2>
+          <h2 class="ion-text-center">Brutto</h2>
         </ion-col>
       </ion-row>
       <ion-row>
+        <ion-col class="ion-text-center"><ion-icon width="30%" name="arrow-down-circle-outline"></ion-icon></ion-col>
+      </ion-row>
+      <ion-row>
         <ion-col>
-          <H3 class="ion-text-center">I</H3>
           <ion-item>
-            <ion-label position="floating">Inserisci valore iniziale</ion-label>
+            <ion-label position="floating">Inserisci l'ultimo valore brutto da visualizzare (suggerimento non superare il 1500°)</ion-label>
             <ion-input type="number" [(ngModel)]="i" > </ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col>
-          <h3 class="ion-text-center">J</h3>
-          <ion-item>
-            <ion-label position="floating">Inserisci valore finale</ion-label>
-            <ion-input type="number" [(ngModel)]="j" > </ion-input>
           </ion-item>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col></ion-col>
           <ion-col>
-            <h3 class="ion-text-center">La lunghezza massima tra {{i}} e {{k}} è {{max}} </h3>
+            <h3 class="ion-text-center">Il {{i}} numero Brutto è {{ultimo}} </h3>
           </ion-col>
           <ion-col></ion-col>
         </ion-row>
         <ion-row>
           <ion-col></ion-col>
-          <ion-button (click)="massimo()">Calcola massimo </ion-button>
+          <ion-button (click)="brutto()">Calcola il {{i}} </ion-button>
           <ion-col></ion-col>
         </ion-row>
     </ion-grid>

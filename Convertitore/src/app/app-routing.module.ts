@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'uva100',
     loadChildren: () => import('./pages/uva100/uva100.module').then( m => m.Uva100PageModule)
   },
+  {
+    path: 'uva136',
+    loadChildren: () => import('./pages/uva136/uva136.module').then( m => m.Uva136PageModule)
+  },
 
 ];
 
