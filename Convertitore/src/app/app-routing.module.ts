@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'uva136',
     loadChildren: () => import('./pages/uva136/uva136.module').then( m => m.Uva136PageModule)
   },
+  {
+    path: 'ordinaarray',
+    loadChildren: () => import('./pages/ordinaarray/ordinaarray.module').then( m => m.OrdinaarrayPageModule)
+  },
 
 ];
 

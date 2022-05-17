@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ordinaarray</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Ordina Array</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    <ion-grid color="light">
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col>
+          <h1 class="ion-text-center">Ordina un Array di lunghezza n in in senso crescente o decrescente</h1>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h2 class="ion-text-center">Inserisci la lunghezza del Vettore</h2>
+        </ion-col>
+      </ion-row>
+    
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Inserisci lunghezza vettore</ion-label>
+            <ion-input type="number" [(ngModel)]="lenghtA" > </ion-input>
+          </ion-item>
+        </ion-col>  
+        
+      <div>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Inserisci i valori da ordinare</ion-label>
+            <ion-input type="number" [(ngModel)]="i" > </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-col><ion-button (click)="ordinaArrayC()">ordina il Vettore in senso crescente </ion-button></ion-col>
+          <ion-col><ion-button (click)="ordinaArrayD()">ordina il Vettore in senso decrescente </ion-button></ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col></ion-col>
+            <ion-col>
+              <ion-label position="floating" class="ion-text-center">La sequenza scelta è {{a}}</ion-label>
+            </ion-col>
+            <ion-col></ion-col>
+          </ion-row>
+        </div>
+    </ion-grid>
+</ion-content>
